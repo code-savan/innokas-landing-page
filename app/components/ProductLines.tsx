@@ -124,9 +124,9 @@ export default function ProductLines() {
       <div className="container mx-auto px-4">
         <h2 className="text-3xl font-bold text-center mb-12">Our Product Lines</h2>
         <Tabs defaultValue="fruits" className=" mx-auto w-full">
-          <TabsList className="flex items-center flex-wrap justify-center gap-4 md:gap-0 w-[80%] mx-auto md:w-full md:mb-8 mb-16">
+          <TabsList className="flex items-center flex-wrap justify-center mx-auto md:w-full md:mb-8 mb-10">
             {products.map((product) => (
-              <TabsTrigger key={product.id} value={product.id} className="md:text-lg font-semibold md:basis-1/4">
+              <TabsTrigger key={product.id} value={product.id} className="md:text-lg font-semibold basis-1/2 md:basis-1/4">
                 {product.title}
               </TabsTrigger>
             ))}
