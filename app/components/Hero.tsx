@@ -10,7 +10,7 @@ const frozenFoods = [
 
 export default function Hero() {
   return (
-    <section id='/' className="relative bg-white h-screen flex flex-col pb-4 pt-[150px] md:pt-[130px]">
+    <section id='/' className="relative bg-white md:h-screen flex flex-col pb-4 pt-[150px] md:pt-[130px]">
       <Header />
       <div className=" flex items-center">
         <div className="container mx-auto px-4 text-center">

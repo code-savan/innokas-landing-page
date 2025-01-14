@@ -8,7 +8,7 @@ export default function About() {
       <div className="container mx-auto px-4">
         <div className="flex flex-col md:flex-row items-center gap-8">
           <div className="md:w-1/2">
-            <h2 className="text-3xl font-bold mb-4">Who Are We?</h2>
+            <h2 className="text-3xl font-bold mb-4 text-center md:text-left">Who Are We?</h2>
             <p className="text-lg text-gray-700 mb-6">
               Innokas Nigeria Limited (INL) is a foremost indigenous and commercialized company
               located at the business heart of Lagos state Nigeria. We specialize in the import
