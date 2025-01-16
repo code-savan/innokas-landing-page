@@ -12,8 +12,8 @@ export default function Vision() {
         <h2 className="text-3xl font-bold text-center mb-8">Our Vision, Mission, and Objectives</h2>
         <Accordion type="single" collapsible className="w-full mx-auto">
           <AccordionItem value="vision">
-            <AccordionTrigger className="text-[18px]">Vision</AccordionTrigger>
-            <AccordionContent className="text-[16px]">
+            <AccordionTrigger className="text-[22px] md:text-[24px] font-semibold">Vision</AccordionTrigger>
+            <AccordionContent className="text-[18px]">
             -As a major stakeholder in the Nigeria business our Vision is to be the most preferred
 choice and trusted company that create values, provides and distribute quality, safe and
 hygiene product and service to our esteem customer. <br /><br />
@@ -22,8 +22,8 @@ unmatched customer loyalty while offering complete solutions to clients‟ needs
             </AccordionContent>
           </AccordionItem>
           <AccordionItem value="mission">
-            <AccordionTrigger className="text-[18px]">Mission</AccordionTrigger>
-            <AccordionContent className="text-[16px]">
+            <AccordionTrigger className="text-[22px] md:text-[24px] font-semibold">Mission</AccordionTrigger>
+            <AccordionContent className="text-[18px]">
             -The mission and mandate of offering best quality and hygiene consumable goods to our
 enormous esteemed customers.<br /><br />
 - Committed to provide a stress-free business experience with superior services that
@@ -33,8 +33,8 @@ passion for excellence and exceeds client expectations.
             </AccordionContent>
           </AccordionItem>
           <AccordionItem value="objectives">
-            <AccordionTrigger className="text-[18px]">Objectives</AccordionTrigger>
-            <AccordionContent>
+            <AccordionTrigger className="text-[22px] md:text-[24px] font-semibold">Objectives</AccordionTrigger>
+            <AccordionContent className="text-[18px]">
               <ul className="list-disc pl-5 text-[16px]">
                 <li>Adopt a specific and clear policy in various scopes with high growth rates and
                 limited risks.</li>

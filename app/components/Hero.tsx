@@ -24,10 +24,10 @@ export default function Hero() {
           </p>
           <div className=" md:flex items-center justify-center gap-4">
             <Link href={"#about"}>
-            <Button className="bg-[#bada34] hover:bg-[#a5c22f] text-white px-8 w-full mb-4 md:mb-0">About Us</Button>
+            <Button className="bg-[#bada34] hover:bg-[#a5c22f] text-white px-8 w-full mb-4 md:mb-0">Who we Are</Button>
             </Link>
             <Link href={"#contact"} className=''>
-            <Button variant="outline" className='px-8 w-full'>Contact Us</Button>
+            <Button variant="outline" className='px-10 w-full'>Get in Touch</Button>
             </Link>
           </div>
       <div>

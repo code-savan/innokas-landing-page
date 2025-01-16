@@ -1,7 +1,7 @@
 import { Button } from '@/components/ui/button'
 import { Input } from '@/components/ui/input'
 import { Textarea } from '@/components/ui/textarea'
-import { User, Mail } from 'lucide-react';
+import { User, Mail, Pin, MapPin, Phone } from 'lucide-react';
 
 
 export default function Contact() {
@@ -54,17 +54,32 @@ export default function Contact() {
     </div>
           <div>
             <h3 className="text-xl font-semibold mb-4">Our Location</h3>
-            <p className="text-gray-600 mb-4">
+            <p className="text-gray-600 mb-4 md:flex items-center md:space-x-2 uppercase">
+            <Mail />
+                <span>
+              examplemail@gmail.com
+                </span>
+            </p>
+
+            <p className="text-gray-600 mb-4 md:flex items-center md:space-x-2">
+            <Phone />
+                <span>
+                <a href="tel:+2348089149601">+2348089149601</a>, <a href="tel:+2348123047312">+2348123047312</a>
+                </span>
+            </p>
+
+            <p className="text-gray-600 mb-4 md:flex items-center md:space-x-2 uppercase">
+            <MapPin />
+            <span>
               Head Office: 16, Cause Way Road, Saka Alao Street, Ijora 7up, Lagos State.
+            </span>
             </p>
-            <p className="text-gray-600 mb-4">
+            {/* <p className="text-gray-600 mb-4">
               Branch: EG01-13, Nigeria Army Shopping Complex, Bolade Oshodi, Bolade Bus Stop, Lagos.
-            </p>
-            <p className="text-gray-600 mb-4">
-              Tel: 08089149601, 08123047312
-            </p>
+            </p> */}
+
             {/* Placeholder for Google Map */}
-            <div className="w-full h-64 bg-gray-300 rounded-lg">
+            <div className="w-full h-64 md:h-[350px] bg-gray-300 rounded-lg">
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3964.376110190765!2d3.353950075240568!3d6.473952993517849!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b8b38f04ee0d5%3A0x576c2f0f7d681747!2sSaka%20Alao!5e0!3m2!1sen!2sng!4v1736853464156!5m2!1sen!2sng" className='w-full h-full'  style={{border:0}} loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
             </div>
           </div>
