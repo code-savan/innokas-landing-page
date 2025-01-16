@@ -11,7 +11,7 @@ const products = [
     icon: Fruit,
     description: `
     Under these products line we offer an expertise as a major dealer in Apples of different
-varieties, Plum, Grapes, Pear, Kiwi, Citrus, Berries of different varieties Vegetables). Our
+varieties, Plum, Grapes, Pear, Kiwi, Citrus, Strawberry, Blueberry, Date, Garlic, Vegetables). Our
 mission is to contribute to the growth and success of our clients by helping them create
 a market structure
 which to transact on the sales, distribution and retail of different kind of fruits and
@@ -23,7 +23,53 @@ suitable for individual and household consumption at same time helping individua
 various household maintain a good and healthy balance by consuming of foods not
 detrimental to their health.
     `,
-    benefits: ['High quality freshly packed fruits', 'Wide range and varieties to choose from', 'High distribution channel', 'Fresh and highly hygienic', 'Fair and competitive prices']
+    benefits: ['High quality freshly packed fruits', 'Wide range and varieties to choose from', 'High distribution channel', 'Fresh and highly hygienic', 'Fair and competitive prices'],
+    categories: [
+        `<p class="text-[17px] font-semibold mb-2">Apple 🍎 🍏:</p>
+
+        <li>Golden Delicious </li>
+        <li>Granny Smith </li>
+        <li>Top Red Apple </li>
+        <li>Crisp Red Apple</li>
+        <li>Flash Gala /Royal Gala/ Big Bucks</li>
+        <li>Pink Lady </li>
+        <li>Joya Crisp Red </li>
+        <li>Crisp Pink</li>
+        `,
+        `<p class="text-[17px] font-semibold mb-2">Pear 🍐:</p>
+
+        <li>Packham Triumph </li>
+        <li>William Bon  Chretien</li>
+        <li>Vermont Beauty</li>
+        `,
+        `<p class="text-[17px] font-semibold mb-2">Grapes 🍇:</p>
+
+        <li>White Seedless Grapes - Sugraone</li>
+        <li>Red Seedless Grapes - Crimson Seedless</li>
+        <li>Black Seedless Grapes </li>
+        <li>Red Seeded Grape - Red Globe</li>
+        `,
+        `<p class="text-[17px] font-semibold mb-2">Citrus 🍊:</p>
+
+        <li>Easy Peeler - Clementine & Narcodot </li>
+        <li>Grapefruit</li>
+        `,
+        `<p class="text-[17px] font-semibold mb-2">Lemon 🍋:</p>
+
+        <li>Orange - Naval</li>
+        <li>Valencia</li>
+        <li>Autumn Gold</li>
+        `,
+        `<p class="text-[17px] font-semibold mb-2">Plums 🍑:</p>
+
+        <li>Angeleno</li>
+        <li>Africa Delight</li>
+        <li>Black Splendor</li>
+        `,
+        `<p class="text-[17px] font-semibold mb-2">Pomegranate 🥝:</p>
+        <li>Wonderful</li>
+        `,
+    ]
   },
   {
     id: 'frozen',
@@ -147,6 +193,16 @@ export default function ProductLines() {
                         <li key={index} className="text-gray-600">{benefit}</li>
                       ))}
                     </ul>
+                  </>
+                )}
+                {product.categories && (
+                  <>
+                    <h4 className="text-xl font-semibold mb-2">Categories:</h4>
+
+                      {product.categories.map((category, index) => (
+                        <div key={index} className="text-gray-600 mb-3" dangerouslySetInnerHTML={{ __html: category}}></div>
+                      ))}
+
                   </>
                 )}
                 {product.services && (
