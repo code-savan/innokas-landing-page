@@ -1,11 +1,13 @@
+import Image from 'next/image'
 import Link from 'next/link'
 
 export default function Footer() {
   return (
-    <footer className="bg-black text-white py-12">
+    <footer className="bg-black text-white pb-12 pt-8">
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <div>
+            <Image src={"/darklogo.png"} alt='image' width={100} height={100} />
             <h3 className="text-lg font-semibold mb-4">Innokas Nigeria Limited</h3>
             <p className="text-sm">Your trusted partner for high-quality fruits, frozen foods, and agricultural products.</p>
           </div>
@@ -20,8 +22,13 @@ export default function Footer() {
           </div>
           <div>
             <h3 className="text-lg font-semibold mb-4">Contact Information</h3>
-            <p className="text-sm">Location: 16, Cause Way Road, Saka Alao Street, Ijora 7up, Lagos State.</p>
-            <p className="text-sm">Tel: 08089149601, 08123047312</p>
+            <p className="text-md mb-3 uppercase">Location: 16, Cause Way Road, Saka Alao Street, Ijora 7up, Lagos State.</p>
+            <span>
+                <a href="tel:+2348089149601">+2348089149601</a>, <a href="tel:+2348123047312">+2348123047312</a>
+                </span>
+                <p className='uppercase mt-3'>
+              examplemail@gmail.com
+                </p>
           </div>
         </div>
         <div className="mt-8 pt-8 border-t border-gray-700 text-center">

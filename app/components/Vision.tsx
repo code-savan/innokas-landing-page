@@ -35,7 +35,7 @@ passion for excellence and exceeds client expectations.
           <AccordionItem value="objectives">
             <AccordionTrigger className="text-[22px] md:text-[24px] font-semibold">Objectives</AccordionTrigger>
             <AccordionContent className="text-[18px]">
-              <ul className="list-disc pl-5 text-[16px]">
+              <ul className="list-disc pl-5 space-y-3">
                 <li>Adopt a specific and clear policy in various scopes with high growth rates and
                 limited risks.</li>
                 <li>Acquire investments with good internal return rates that suit the expectations of
