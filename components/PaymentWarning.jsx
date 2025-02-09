@@ -1,6 +1,6 @@
 export default function PaymentWarning() {
     return (
-      <div className="  bg-red-600 text-white p-4 border-b-4 shadow-lg animate-pulse rounded-lg">
+      <div className="  bg-red-600 text-white p-4 border-b-4 shadow-lg animate-pulse rounded-[20px]">
         <div className="max-w-6xl mx-auto flex items-center gap-4 flex-wrap justify-center md:justify-start">
           <span className="text-3xl">⚠️</span>
           <div className="text-center md:text-left">
